@@ -7,8 +7,11 @@ from keras import backend as K
 import tensorflow.keras.layers
 import keras
 
+#Defining the input image size - chosen so it can be recreated easily
 input_img = Input(shape=(320, 192, 3))
 
+#Model architecture definition
+#Consists of convultional layers to help learn the features of the clothing item - sleeve type, striped, collar type, etc
 x = Conv2D(64, (3, 3), activation='relu', padding='same')(input_img)
 x = MaxPooling2D((2, 2), padding='same')(x)
 x = Conv2D(32, (3, 3), activation='relu', padding='same')(x)
@@ -47,6 +50,8 @@ zip_ref = zipfile.ZipFile("Zipped_final.zip", 'r')
 zip_ref.extractall("/tmp")
 zip_ref.close()
 
+
+#Loading in the data and resizing the images
 from skimage.io import imread_collection
 
 col_dir = '/tmp/Zipped/Amazon Images/*.jpg'
@@ -100,10 +105,12 @@ x_test = np.array(col_clothes[3000:])
 x_train = x_train.astype('float32')
 x_test = x_test.astype('float32')
 
+#Training the model
 autoencoder.fit(x_train, x_train,
                 epochs=50,
                 batch_size=32,
                 validation_data=(x_test, x_test))
 
+#Saving the model
 encoder = Model(input_img, encoded)
 encoder.save("encoder") 
