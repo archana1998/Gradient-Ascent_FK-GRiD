@@ -1,7 +1,7 @@
 ## Gradient Ascent - Flipkart GRiD 2020
 Submission by -
-Rushabh Musthyala
-Archana Swaminathan
+Rushabh Musthyala,
+Archana Swaminathan,
 Shanmukh Kali Prasad 
 
 ### Problem Definition
