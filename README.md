@@ -59,3 +59,15 @@ Deliverables -
  - We recreated some of the images using the encodings we got and the results were very promising, indicating that out feature encodings/representations are accurate
  - To create the model, run the script `encoder_training_script.py`
  - Alternatively, download the trained model from - *link*
+
+### Computing the Popularity Metric (PM)
+ - We wanted consider both ratings and the number of ratings in our attempt to rank all the products effectively
+ - We came up with a popularity measure which combines the two properly
+ -  A Bayesian view of the beta distribution was adopted to come up with a formula to give us a PM given the rating and number of ratings
+**![](https://lh4.googleusercontent.com/YHqDVGGew38M4WKuhsW26LaNQocchnEG5CwgMOthi_hWGc2UE4fpkMsuMd1afKd74_c5Qeiss5ZOL6wVp0TvMMUK77mYnj7VLtIwfJ05ncfCf5MuMGC0PyrdJSCdsgqrekdNtoTamfE)**
+ - We loaded in all our e-Commerce data, calculated the feature encodings using the model mentioned earlier
+ - Then computed the PM for each product
+ - Then trained a model to predict the PM given a set of encodings - we can now compare the predicted performance of different products on e-Commerce sites, this is especially useful for designers that want to know how the public would react to their clothes
+ - To create and train the model, run `pm_model_train_script.py`
+ - Alternatively, you can download the trained model from here - link
+ - Once the model is created, you can run `pm_predictor_script.py` to predict the PM for any input image
