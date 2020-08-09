@@ -19,7 +19,7 @@ Deliverables -
 4) Computing a popularity metric (PM) to effectively combine the rating and number of reviews
 5) Clustering the images based on their encodings to gain insight on what is trending and what is lagging
 
-### Web Scraping
+### 1. Web Scraping
  - This was done using Selenium with Python3
  - We chose 6 locations to scrape images from, covering a range of multipurpose e-Commerce sites, fashion magazines, catalogues and fashion shopping sites
 	 - Vogue India
@@ -32,3 +32,10 @@ Deliverables -
  - From the other sites, we extracted the fashion images
  - The scripts can be easily modified to work on other websites by just changing a few variables according to the architecture of the website, hence this step can be easily scaled up
  - All of the data scraped is converted to Pandas dataframe and then stored as a CSV
+ 
+ ### 3. Downloading the images and Object Detection
+ - The images can be downloaded from the image links stored in the CSV by running the image_download_script.py
+ - Object Detection was done using a pretrained YOLOv3 architecture that was trained with the DeepFashion2 dataset
+ - Code is available at this repository (https://github.com/archana1998/Clothing-Detection), and can be cloned and used by following instructions in the README of the file.
+ - This model identifies "long and short top" object categories and crops out just the bounding box of the image, that contains only the t-shirt.
+ - The t-shirt image is then saved and used for feature extraction
