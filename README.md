@@ -41,3 +41,11 @@ Deliverables -
  - Code is available at this repository (https://github.com/archana1998/Clothing-Detection), and can be cloned and used by just running the ```new_image_demo.py``` script
  - This model identifies "long and short top" object categories and crops out just the bounding box of the image, that contains only the t-shirt.
  - The t-shirt image is then saved and used for feature extraction
+
+### 3. Learning Feature Encodings
+ - In order to represent our images for later processing, we needed a way to extract the features from each clothing item
+ - We trained a model using the keras library and tensorflow backend
+ - Our model was based on the CNN architecture which is known in the Computer Vision world for being able to learn features from images
+ - We recreated some of the images using the encodings we got and the results were very promising, indicating that out feature encodings/representations are accurate
+ - To create the model, run the script `encoder_training_script.py`
+ - Alternatively, download the trained model from - *link*
