@@ -24,10 +24,12 @@ Deliverables -
  - We chose 6 locations to scrape images from, covering a range of multipurpose e-Commerce sites, fashion magazines, catalogues and fashion shopping sites
 	 - Vogue India
 	 - Flipkart
-	 - Amazon
-	 - Pinterest Womens Fashion catalogue
-	 - Pinterest Mens Fashion catalogue
-	 - Myntra
+	 - Myntra 
+	   (above 3 can be accessed by running the ```data_collection_fkmyvog.py```
+	 - Amazon (run ```amazon_data_script.py```)
+	 - Pinterest Womens Fashion catalogue (run ```pinterest_woman_script.py```)
+	 - Pinterest Mens Fashion catalogue (run ```pinterest_man_script.py```)
+	 
  - From sites like Flipkart and Amazon, we extracted the product name, rating, number of reviews and the image
  - From the other sites, we extracted the fashion images
  - The scripts can be easily modified to work on other websites by just changing a few variables according to the architecture of the website, hence this step can be easily scaled up
