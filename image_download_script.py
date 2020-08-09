@@ -4,16 +4,17 @@ import pandas as pd
 import os 
 from os import path
 
-#replace directory and parent_dir with folder name and folder path
+
+user_input1 = input("Please enter the filename of the scraped csv: ")
 
 directory = "Amazon Images"
-parent_dir = "/media/archana/Local/Flipkart GRiD"
-img_path = os.path.join(parent_dir, directory) 
+
+img_path = os.path.join(directory) 
 if(path.isdir(img_path)==False):
     os.mkdir(img_path)
     print("Directory '% s' created" % directory) 
 
-df1 = pd.read_csv("df_amazon.csv")
+df1 = pd.read_csv(user_input1)
 df_img_links = df1["img_links"]
 
 for i in range(len(df_img_links)):
