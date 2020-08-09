@@ -58,7 +58,7 @@ Deliverables -
  - Our model was based on the CNN architecture which is known in the Computer Vision world for being able to learn features from images
  - We recreated some of the images using the encodings we got and the results were very promising, indicating that out feature encodings/representations are accurate
  - To create the model, run the script `encoder_training_script.py`
- - Alternatively, download the trained model from - *link*
+ - Alternatively, download the trained model from - https://drive.google.com/file/d/1_ZRFLLusck_1waFl703PK0oDas7NWo0n/view?usp=sharing
 
 ### 4. Computing the Popularity Metric (PM)
  - We wanted consider both ratings and the number of ratings in our attempt to rank all the products effectively
@@ -69,7 +69,7 @@ Deliverables -
  - Then computed the PM for each product
  - Then trained a model to predict the PM given a set of encodings - we can now compare the predicted performance of different products on e-Commerce sites, this is especially useful for designers that want to know how the public would react to their clothes
  - To create and train the model, run `pm_model_train_script.py`
- - Alternatively, you can download the trained model from here - link
+ - Alternatively, you can download the trained model from here - https://drive.google.com/file/d/1QiyeRfWD18GAdJl-lUMxjvp6LF_amTl1/view?usp=sharing
  - Once the model is created, you can run `pm_predictor_script.py` to predict the PM for any input image
  
  ### 5. Clustering
@@ -77,3 +77,14 @@ Deliverables -
  - 5 clustering algorithms were tested and evaluated using the Silhouette coefficient and K means clustering gave us the best results
  - We took the largest cluster to be a representation of the most popular/trending styles of clothes and the smallest clusters to be a representation of what isn't popular
  - This can be tested by running `clustering_script.py`
+
+
+### Running instructions
+1) Create an environment with all the packages and libraries specified in the "requirements" section
+2) Download the "Zipped_final.zip" folder from here - https://drive.google.com/file/d/1WI95J600swejVn2-6vzhFRuxKfZa_gQh/view?usp=sharing
+3) Download the encoder model from here - https://drive.google.com/file/d/1_ZRFLLusck_1waFl703PK0oDas7NWo0n/view?usp=sharing
+4) Download the PM predictor model from here - https://drive.google.com/file/d/1QiyeRfWD18GAdJl-lUMxjvp6LF_amTl1/view?usp=sharing
+5) Run `clustering_script.py` to replicate the clustering step and to visualise trends and lags in selected images from different sites
+6) Run `pm_predictor_script.py` to calculate the expected PM of any input image given to the model
+
+Note: These instructions are intended to get someone up and running with the application quickly and easily, alternatively you can choose to scrape data and train models from scratch using the respective scripts available in the repo
