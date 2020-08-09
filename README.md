@@ -35,7 +35,7 @@ Deliverables -
  - The scripts can be easily modified to work on other websites by just changing a few variables according to the architecture of the website, hence this step can be easily scaled up
  - All of the data scraped is converted to Pandas dataframe and then stored as a CSV
  
- ### 3. Downloading the images and Object Detection
+ ### 2. Downloading the images and Object Detection
  - The images can be downloaded from the image links stored in the CSV by running the ``` image_download_script.py ```
  - Object Detection was done using a pretrained YOLOv3 architecture that was trained with the DeepFashion2 dataset
  - Code is available at this repository (https://github.com/archana1998/Clothing-Detection), and can be cloned and used by just running the ```new_image_demo.py``` script
