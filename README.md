@@ -60,7 +60,7 @@ Deliverables -
  - To create the model, run the script `encoder_training_script.py`
  - Alternatively, download the trained model from - *link*
 
-### Computing the Popularity Metric (PM)
+### 4. Computing the Popularity Metric (PM)
  - We wanted consider both ratings and the number of ratings in our attempt to rank all the products effectively
  - We came up with a popularity measure which combines the two properly
  -  A Bayesian view of the beta distribution was adopted to come up with a formula to give us a PM given the rating and number of ratings
