@@ -18,3 +18,17 @@ Deliverables -
 3) Learning feature encodings for all of the images
 4) Computing a popularity metric (PM) to effectively combine the rating and number of reviews
 5) Clustering the images based on their encodings to gain insight on what is trending and what is lagging
+
+### Web Scraping
+ - This was done using Selenium with Python3
+ - We chose 6 locations to scrape images from, covering a range of multipurpose e-Commerce sites, fashion magazines, catalogues and fashion shopping sites
+	 - Vogue India
+	 - Flipkart
+	 - Amazon
+	 - Pinterest Womens Fashion catalogue
+	 - Pinterest Mens Fashion catalogue
+	 - Myntra
+ - From sites like Flipkart and Amazon, we extracted the product name, rating, number of reviews and the image
+ - From the other sites, we extracted the fashion images
+ - The scripts can be easily modified to work on other websites by just changing a few variables according to the architecture of the website, hence this step can be easily scaled up
+ - All of the data scraped is converted to Pandas dataframe and then stored as a CSV
