@@ -19,6 +19,16 @@ Deliverables -
 4) Computing a popularity metric (PM) to effectively combine the rating and number of reviews
 5) Clustering the images based on their encodings to gain insight on what is trending and what is lagging
 
+### Requirements 
+ - Python 3.6
+ - Selenium
+ - Keras
+ - TensorFlow
+ - Matplotlib
+ - Sklearn
+ - Numpy
+ - Pandas
+
 ### 1. Web Scraping
  - This was done using Selenium with Python3
  - We chose 6 locations to scrape images from, covering a range of multipurpose e-Commerce sites, fashion magazines, catalogues and fashion shopping sites
