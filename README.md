@@ -25,7 +25,7 @@ Deliverables -
 	 - Vogue India
 	 - Flipkart
 	 - Myntra 
-	   (above 3 can be accessed by running the ```data_collection_fkmyvog.py```
+	   (above 3 can be accessed by running the ```data_collection_fkmyvog.py```)
 	 - Amazon (run ```amazon_data_script.py```)
 	 - Pinterest Womens Fashion catalogue (run ```pinterest_woman_script.py```)
 	 - Pinterest Mens Fashion catalogue (run ```pinterest_man_script.py```)
