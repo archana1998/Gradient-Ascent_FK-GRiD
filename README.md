@@ -71,3 +71,9 @@ Deliverables -
  - To create and train the model, run `pm_model_train_script.py`
  - Alternatively, you can download the trained model from here - link
  - Once the model is created, you can run `pm_predictor_script.py` to predict the PM for any input image
+ 
+ ### 5. Clustering
+ - Using the encodings previously calculated, we performed clustering on a selection of images determined by the user to visualise the trending and lagging products in the set of images being considered
+ - 5 clustering algorithms were tested and evaluated using the Silhouette coefficient and K means clustering gave us the best results
+ - We took the largest cluster to be a representation of the most popular/trending styles of clothes and the smallest clusters to be a representation of what isn't popular
+ - This can be tested by running `clustering_script.py`
